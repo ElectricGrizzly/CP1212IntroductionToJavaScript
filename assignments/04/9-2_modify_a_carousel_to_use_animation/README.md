@@ -1,0 +1,6 @@
+# 9-2: Modify a Carousel to Use Animation
+In this exercise, you’ll modify a carousel application so that when an image in the carousel is clicked, an enlarged image is displayed using animation.
+## Instructions
+1. Review the HTML for the application, and notice that it contains an img element with an id of “image” following the heading. Also notice that the href attributes of the \<a> elements in the carousel are set to the URL of the enlarged image to be displayed when the associated carousel image is clicked.
+2. Code an event handler for the click event of the \<a> elements in the list. This event handler should start by getting the URL for the image to be displayed. Then, it should assign this URL to the enlarged image.
+3. Add animation to the click event handler so the opacity of the current image is set to 0 and 205 is subtracted from the left margin of the image over a period of 1 second. Use a callback function to reverse this animation. This function should also contain the statement that sets the URL for the enlarged image. The effect will be for the current image to fade out as it slides to the left, and then for the new image to fade in as it slides to the right.
