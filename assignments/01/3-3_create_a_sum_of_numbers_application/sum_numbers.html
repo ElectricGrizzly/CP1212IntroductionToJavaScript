@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <title>Sum of Numbers</title>
+</head>
+<body>
+    <main>
+        <h1>Sum of Numbers</h1>
+        <script>
+            "use strict";
+            let valueEntry = null;
+            let continueEntry = null;
+            const lowerLimit = 1;
+            const upperLimit = 100;
+            const continueEntryKey = "y"
+            do{
+                do{
+                    valueEntry = parseInt(prompt("Enter any top number to sum\n" + `from ${lowerLimit} through ${upperLimit}`));
+                    if (valueEntry > upperLimit || valueEntry < lowerLimit || isNaN(valueEntry)){
+                        alert(`Please enter a number between ${lowerLimit} and ${upperLimit}`);
+                        valueEntry = null;
+                    }
+                }
+                while (valueEntry == null);
+                let sum = 0;
+                for (let currentInteger = 1; currentInteger <= valueEntry; currentInteger++){
+                    sum += currentInteger;
+                }
+                document.write(`<p>The sum of the numbers ${lowerLimit} through ${valueEntry} is ${sum}</p>`);
+                continueEntry = prompt("Do another sum?");
+                }
+            while (continueEntry == "y");
+        </script>
+    </main>
+</body>
+</html>

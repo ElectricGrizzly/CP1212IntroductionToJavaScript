@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grade Converter</title>
+</head>
+<body>
+    <main>
+        <h1>Show letter grade</h1>
+        <script>
+            "use strict";
+            const upperLimit = 100;
+            const lowerLimit = 0;
+            const quitValue = 999;
+            const thresholdGradeA = 88;
+            const thresholdGradeB = 80;
+            const thresholdGradeC = 68;
+            const thresholdGradeD = 60;
+            let numberGrade = null;
+            let letterGrade = null;
+            while (numberGrade != quitValue){
+                numberGrade = parseFloat(prompt(`Enter number grade from ${lowerLimit} through ${upperLimit}\n` + `Or enter ${quitValue} to end entries`));
+                if (numberGrade >= lowerLimit && numberGrade <= upperLimit){
+                    if (numberGrade >= thresholdGradeA){
+                        letterGrade = "A";
+                    }
+                    else if (numberGrade >= thresholdGradeB){
+                        letterGrade = "B";
+                    }
+                    else if (numberGrade >= thresholdGradeC){
+                        letterGrade = "C";
+                    }
+                    else if (numberGrade >= thresholdGradeD){
+                        letterGrade = "D";
+                    }
+                    else{
+                        letterGrade = "F";
+                    }
+                    // Allow users to input values as float, but display as rounded integer for letter grade
+                    const html = `<p>Grade ${numberGrade.toFixed(0)} = ${letterGrade}</p>`;
+                    document.write(html);
+                }
+                else if (numberGrade == quitValue){
+                    break;
+                }
+                else{
+                    continue;
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
