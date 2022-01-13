@@ -11,6 +11,13 @@ const regions = [region1, region2, region3, region4, region5];
 let total = 0;
 
 function sumArray (integerArray){
+/**
+ * Sum an array of integers.
+ * 
+ * @param {array} integerArray - An array of integers.
+ * 
+ * @returns {integer} sum - The sum of integers in integerArray.
+ */
     let sum = 0;
     for (let i in integerArray){
         sum += integerArray[i];
@@ -19,6 +26,14 @@ function sumArray (integerArray){
 }
 
 function sumArraysVertical (index, ...integerArray){
+/**
+ * Sums an array of arrays vertically (column-wise)
+ * 
+ * @param {integer} index - The target index to sum along.
+ * @param {array} integerArray - Any number of integer arrays.
+ * 
+ * @returns {integer} sum - The sum of integers at a specific index of arrays of integerArray.
+ */
     let sum = 0;
     for (let i in integerArray){
         sum += integerArray[i][index];
