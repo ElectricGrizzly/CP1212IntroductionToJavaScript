@@ -1,0 +1,6 @@
+# 7-1: Develop the Clock Application
+In this exercise, you’ll create an application that displays the current time in hours, minutes, and seconds. The display should use a 12-hour clock and indicate whether it’s AM or PM.
+## Instructions
+1. In the JavaScript file, note that four functions are supplied. The $() function that you can use to select elements. The padSingleDigit() function, that adds a leading zero to single digits using a string method that you’ll learn about in chapter 12. The start of a displayCurrentTime() function. And the start of a DOMContentLoaded event handler.
+2. In the displayCurrentTime() function, add code that uses the Date object to determine the current hour, minute, and second. Convert these values to a 12-hour clock, determine the AM/PM value, and display these values in the appropriate span tags.
+3. In the DOMContentLoaded event handler, code a timer that calls the displayCurrentTime() function at 1 second intervals. Also, make sure that the current time shows as soon as the page loads.

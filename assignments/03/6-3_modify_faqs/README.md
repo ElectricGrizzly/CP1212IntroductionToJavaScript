@@ -1,0 +1,4 @@
+# 6-3: Modify the FAQs Application
+This exercise has you make a minor modification to the FAQs application. When you’re done, this application should work the same as before, except that only one answer can be displayed at a time. In other words, when the user clicks on a heading to display the answer, the other answers must be hidden.
+## Instructions
+1. Add code to the toggle() function so only one answer can be displayed at a time. To do that, create an array of the h2 elements. Then, use a for-of loop to go through the h2 elements in the array and remove the class attribute for all h2 elements that aren’t the one that has been clicked. You also need to remove the class attributes for all of the div siblings of the h2 elements that weren’t clicked.

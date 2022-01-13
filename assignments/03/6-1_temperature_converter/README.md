@@ -1,0 +1,9 @@
+# 6-1: Develop the Temperature Conveter
+In this exercise, you’ll use radio buttons to determine whether the conversion is from Fahrenheit to Celsius or vice versa. You’ll also modify the DOM so the labels change when a radio button is clicked, and the page displays an error message when the user enters invalid data.
+## Instructions
+1. Note that the JavaScript file has some starting JavaScript code, including the $() function, three helper functions, three event handler functions, and a DOMContentLoaded event handler that attaches the three event handlers.
+2. Review how the toCelsius() and toFarhenheit() event handler functions call the toggleDisplay() helper function and pass it strings to display. Also note that the toggleDisplay() helper function and the convertTemp() event handler function are incomplete.
+3. Code the toggleDisplay() function so it changes the text in the labels for the text boxes to the values in the parameters that it receives. It should also clear the disabled text box where the computed temperature is displayed.
+4. Code the convertTemp() function without any data validation. It should use the helper functions to calculate the temperature based on which radio button is checked. The value returned by the helper functions should be rounded to zero decimal places.
+5. Add data validation to the convertTemp() function. If the entry is note a valid number, a validation message should be displayed in the element with the id of “message”.
+6. Add any finishing touches to the application whenever that’s appropriate. This can be things like moving the focus to the first text box and selecting the text, clearing a previous error message, or clearing a previously computed temperature value.

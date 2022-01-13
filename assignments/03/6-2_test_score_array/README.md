@@ -1,0 +1,10 @@
+# 6-2: Use a Test Score Array
+In this exercise, you’ll work with an array and you’ll add nodes to the DOM to display the Results and the Scores.
+## Instructions
+1. At the start of the JavaScript file, you’ll see the declarations for two arrays: one for names and one for scores, and each array contains four elements. You’ll also see the code for the $() function as well as a DOMContentLoaded event handler that attaches three functions named addScore(), displayResults(), and displayScores() to the click events of the buttons.
+2. Write the displayResults() function. It should derive the average score and the highest score from the arrays and then display the results in the div element with “results” as its id as shown above. To display the results, add nodes to the DOM
+with the heading as an h2 element and the average and highest scores as \<p> elements. If those nodes already exist, you’ll need to replace them. 
+3. Write the displayScores() function. It should get the names and scores from the arrays and display them in the div element with “scores” as its id, as shown above. To display the results, add nodes to the DOM with the name and score as label elements, and a break element (\<br>) to go to a new line. Before adding these nodes, you can clear any previous nodes by setting the text content of the div to an empty string.
+4. Write the addScore() function. It should add a name and score to the two arrays. To test whether this works, you can click the Display Scores button and see if the new name and score have been added to the table.
+5. If you haven’t already done it, add data validation to addScore() function. The Name entry must not be empty and the Score entry must be a positive number from 0 through 100. If either entry is invalid, display messages in the span elements after the input elements, as shown above.
+6. Make sure that your application moves the cursor to the Name field when the application starts and after a name and score have been added to the array.
