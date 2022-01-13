@@ -1,0 +1,6 @@
+# 4-3: Develop the Income Tax Calculator
+In this exercise, you’ll use nested if statements and arithmetic expressions to calculate the federal income tax that is owed for a taxable income amount.
+## Instructions
+1. Code the processEntry() function. It should get the user’s entry and make sure it’s a valid number greater than zero. If it isn’t valid, it should display an error message. If it is valid, it should pass the value to a function named calculateTax(), which should return the tax amount. That amount should then be displayed in the second text box. The focus should be moved to the first text box whether or not the entry is valid.
+2. Code the calculateTax() function. To start, just write the code for calculating the tax for any amount within the first two brackets in the table above. The user’s entry should be converted to an integer, and the tax should be rounded to two decimal places. To test this, use income values of 9875 and 40125, which should display taxable amounts of 987.50 and 4,617.50.
+3. Add the JavaScript code for the next tax bracket. Then, if you have the time, add the JavaScript code for the remaining tax brackets.
